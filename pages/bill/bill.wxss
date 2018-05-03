@@ -1,0 +1,58 @@
+.result-item{  
+  position: relative;  
+  display: flex;  
+  flex-direction: row;  
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  overflow: hidden;  
+  border-bottom: 2rpx solid #e5e5e5;  
+}    
+.image{  
+  width: 80rpx;  
+  height: 80rpx;   
+}  
+.result-item .title, 
+.result-item .subtitle{  
+  overflow: hidden;  
+  text-overflow: ellipsis;  
+  white-space: nowrap;  
+  line-height: 40rpx;  
+}  
+.result-item .title{  
+  margin-bottom: 4rpx;  
+  color: #000;  
+}
+.result-title{
+  display: flex;
+  flex-direction: column;
+}  
+.result-item .subtitle{ 
+  color: #808080;  
+  font-size: 24rpx;  
+}  
+.result-item:first-child .subtitle text{  
+  margin-right: 20rpx;  
+}  
+.result-item:not(:first-child) .subtitle text:not(:first-child):before{  
+  content: '/';  
+  margin: 0 8rpx;  
+}  
+.loading{  
+  padding: 10rpx;  
+  text-align: center;  
+}  
+.loading:before{  
+  display: inline-block;  
+  margin-right: 5rpx;  
+  vertical-align: middle;  
+  content: '';  
+  width: 40rpx;  
+  height: 40rpx;  
+  background: url(../../images/icon-loading.png) no-repeat;  
+  background-size: contain;  
+  animation: rotate 1s linear infinite;  
+}  
+.loading.complete:before{  
+  display: none;  
+}  
+
+

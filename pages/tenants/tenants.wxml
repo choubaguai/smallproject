@@ -1,0 +1,41 @@
+<view class='view-tenants'>
+  <view class='view-house-code'>
+    <text class='text-color'>编号：</text>
+    <text>{{house.tenement_code}}</text>
+  </view>
+  <view class='view-house-center'>
+    <text class='text-color'>户型：</text>
+    <text>{{house.house_type}}</text>
+  </view>
+  <view class='view-house-center'>
+    <text class='text-color'>月租：</text>
+    <text>{{house.monthly_rent}}元</text>
+  </view>
+  <view class='view-house-center'>
+    <text class='text-color'>面积：</text>
+    <text>{{house.tenement_area}}平方</text>
+  </view>
+  <view class='view-house-asset'>
+    <text class='text-color'>配置：</text>
+    <text>{{house.asset_name}}</text>
+  </view>
+</view>
+<view class="view-house-code">
+</view>
+<view>
+  <button class="{{showButton?'addtenants':'addtenants_hide'}}" bindtap='addtenants'>添加租客信息</button>
+</view>
+<!-- <scroll-view scroll-y="true" bindscrolltolower="tenant"> -->
+<!-- <view class="result-item" wx:for="{{tenant}}" wx:key="tenant" data-data="{{item}}" bindtap='tenantdetail'> -->
+<view class="{{showButton?'result-item-hide':'result-item'}}" bindtap='tenantdetail'>
+  <view class='view-tenant-info'>
+    <view class='result-title'>
+      <text class="title">{{tenant.tenant_name}}</text>
+      <text class="subtitle">{{tenant.tenant_code}}</text>
+    </view>
+    <view class='houses-state'>
+      <text class='zuke'>{{tenant.end_date}}到期</text>
+    </view>
+  </view>
+</view>
+<!-- </scroll-view> -->

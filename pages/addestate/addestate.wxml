@@ -1,0 +1,25 @@
+<form class='form-add' bindsubmit="formSubmit" bindreset="formReset">
+  <view class="view-esate">
+    <text>房产名称：</text>
+    <input class='input-estate-name' value='{{houseName}}' name='houseName' type='text' confirm-type='next'></input>
+    <image class="map" src='https://rental.xinlongcn.com/images/map.png' bindtap='getAddress'></image>
+  </view>
+   <view class="view-esate">
+    <text>房产编号：</text>
+    <input class='input-estate-name' name='code' type='text' confirm-type='next' maxlength='20'></input>
+  </view>
+  <view class="view-esate">
+    <text>房产地址：</text>
+    <input class='input-estate-name' value='{{houseAddress}}' name='houseAddress' type='text' confirm-type='next'></input>
+  </view>
+  <view class="view-esate">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" name="houseType">
+      <view class="picker" >
+        房产类型：{{index}}
+      </view>
+    </picker>
+  </view>
+  <view class="btn-area">
+    <button formType="submit" type='primary'>保存</button>
+  </view>
+</form>

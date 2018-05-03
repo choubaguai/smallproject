@@ -1,0 +1,48 @@
+<view class='view-tenantdetail'>
+  <view class='view-tenant-name'>
+    <text class='text-color'>姓名：</text>
+    <text>{{tenant.tenant_name}}</text>
+  </view>
+  <view class='view-tenant-number'>
+    <text class='text-color'>电话：</text>
+    <text>{{tenant.tenant_code}}</text>
+  </view>
+  <view class='view-tenant-number'>
+    <text class='text-color'>身份证号码：</text>
+    <text>{{tenant.id_card}}</text>
+  </view>
+  <view class='view-tenant-number'>
+    <text class='text-color'>开始时间：</text>
+    <text>{{tenant.start_date}}</text>
+  </view>
+  <view class='view-tenant-number'>
+    <text class='text-color'>结束时间：</text>
+    <text>{{tenant.end_date}}</text>
+  </view>
+  <view class='view-tenant-number'>
+    <text class='text-color'>交租周期：</text>
+    <text>{{tenant.produce_cycle}}</text>
+  </view>
+  <view class='view-tenant-number'>
+    <text class='text-color'>月租：</text>
+    <text>{{tenant.rent}}元</text>
+  </view>
+  <view class='view-tenant-number'>
+    <text class='text-color'>押金：</text>
+    <text>{{tenant.cash_pledge}}元</text>
+  </view>
+  <view class='view-tenant-number'>
+    <text class='text-color'>交租日期：</text>
+    <text>每月{{tenant.collect_date}}号</text>
+  </view>
+  <view class='view-tenant-number'>
+    <text class='text-color'>入住人数：</text>
+    <text>{{tenant.rental_num}}人</text>
+  </view>
+  <view class='view-tenant-number'>
+    <text class='text-color'>备注：</text>
+    <text>{{tenant.remark}}</text>
+  </view>
+  <view class='view-tenant-remark'>
+  </view>
+</view>

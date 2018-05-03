@@ -1,0 +1,41 @@
+
+.user-motto {
+  padding: 20rpx;
+}
+
+.input-login {
+  padding: 20rpx;
+}
+
+.usermotto {
+  opacity: 0.5;
+  width: 700rpx;
+  background-color: white;
+}
+
+.btn-area {
+  margin-top: 20rpx;
+}
+
+.lib {
+  margin-top: 300rpx;
+  margin-left: 280rpx;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: bisque;
+}
+
+.container {
+  opacity: 0.9;
+  height: 100vh;
+  width: 100vw;
+}
+
+.view-register {
+  color: white;
+  margin-top: 20rpx;
+}
+
+.line-css {
+  height: 1px;
+  background: #ccc;
+}

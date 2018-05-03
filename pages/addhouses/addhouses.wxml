@@ -1,0 +1,34 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="view-house">
+    <text class='text'>房号：</text>
+    <input class='input-house-num' name='tenement_code' type='number' confirm-type='next' placeholder="请输入房号"></input>
+  </view>
+  <view class="view-house">
+    <text class='text'>楼号：</text>
+    <input class='input-house-num' name='tower_no' type='number' confirm-type='next' placeholder="请输入楼号"></input>
+  </view>
+  <view class="view-house">
+    <text class='text'>面积：</text>
+    <input class='input-house-num' name='tenement_area' type='digit' confirm-type='next' placeholder="请输入面积"></input>
+  </view>
+  <view class="view-house">
+    <text class='text'>月租金：</text>
+    <input class='input-house-num' name='monthly_rent' type='number' confirm-type='next' placeholder="请输入月租金"></input>
+  </view>
+  <view class="view-house">
+    <text class='text'>配置：</text>
+    <input class='input-house-num' name='asset_name' disabled='true' value='{{assets}}'  placeholder="请选择配置"></input>
+    <image src='/images/ic_chevron_right_48px.svg' class='img-next' bindtap='goAssets'></image>
+  </view>
+  <view class="view-house">
+    <text class='text'>户型：</text>
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" value="{{multiIndex}}" range="{{multiArray}}" name="house_type">
+    <view class="picker">
+      {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+    </view>
+  </picker>
+  </view>
+  <view class="btn-area">
+    <button formType="submit" type='primary'>保存</button>
+  </view>
+</form>

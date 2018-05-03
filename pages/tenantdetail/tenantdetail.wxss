@@ -1,0 +1,27 @@
+/* pages/tenantdetail/tenantdetail.wxss */
+.view-tenant-name{
+  margin-top: 40rpx;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20rpx 20rpx 20rpx 40rpx;
+  overflow: hidden;
+  border-top: 2rpx solid #e5e5e5;
+}
+.view-tenant-number{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  padding: 20rpx 20rpx 20rpx;
+  overflow: hidden;
+  border-top: 2rpx solid #e5e5e5;
+}
+.view-tenant-remark{
+  border-top: 2rpx solid #e5e5e5;
+}
+.text-color{
+  color: #808080;
+}

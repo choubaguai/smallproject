@@ -1,0 +1,18 @@
+page{
+  background-color: white
+}
+.view-registration{
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  background-color: white;
+  align-items: center;
+  
+}
+
+.btn-area{
+  margin: 20rpx;
+}

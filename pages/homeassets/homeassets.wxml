@@ -1,0 +1,10 @@
+<form bindsubmit="formSubmit">
+  <checkbox-group name="checkbox">
+    <label class="checkbox" wx:for="{{items}}">
+      <checkbox value="{{item.asset_name}}" checked="{{item.checked}}" />{{item.asset_name}}
+    </label>
+  </checkbox-group>
+  <view class="btn-area">
+    <button formType="submit">确定</button>
+  </view>
+</form>

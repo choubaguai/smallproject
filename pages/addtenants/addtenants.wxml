@@ -1,0 +1,59 @@
+<form bindsubmit="formSubmit">
+  <view class='view-tenants'>
+    <text>姓名：</text>
+    <input name="tenant_name" type='text' placeholder='请输入姓名'></input>
+  </view>
+  <view class='view-tenants'>
+    <text>电话：</text>
+    <input name="tenant_code" type='number' maxlength='11' placeholder='请输入手机号码'></input>
+  </view>
+  <view class='view-tenants'>
+    <text>身份证号码：</text>
+    <input name="id_card" type='idcard' placeholder='请输入身份证号码'></input>
+  </view>
+  <view class='view-tenants'>
+    <picker mode="date" value="{{startDate}}" start="{{startDate}}" end="2118-12-30" bindchange="bindStartDateChange" name="start_date">
+      <view class="picker">
+        起租日期：{{startDate}}
+      </view>
+    </picker>
+  </view>
+  <view class='view-tenants'>
+    <picker mode="date" value="{{endDate}}" start="{{endDate}}" end="2118-12-30" bindchange="bindEndDateChange" name="end_date">
+      <view class="picker">
+        到租日期：{{endDate}}
+      </view>
+    </picker>
+  </view>
+  <view class='view-tenants'>
+    <text>收租日期：</text>
+    <input name="collect_date" type='number' placeholder='请输入收租日期'></input>
+  </view>
+  <view class='view-tenants'>
+    <picker range="{{cycle}}" value="{{index}}" bindchange="bindCycleChange" name="produce_cycle">
+      <view class="picker">
+        收租周期：{{cycle[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class='view-tenants'>
+    <text>租金（月）：</text>
+    <input name="rent" type='number' placeholder='请输入租金'></input>
+  </view>
+
+  <view class='view-tenants'>
+    <text>押金：</text>
+    <input name="cash_pledge" type='number' placeholder='请输入押金'></input>
+  </view>
+  <view class='view-tenants'>
+    <text>人数：</text>
+    <input name="rental_num" type='number' placeholder='请输入人数'></input>
+  </view>
+   <view class='view-tenants'>
+    <text>备注：</text>
+    <input name="remark" placeholder='请输入备注'></input>
+  </view>
+  <view class="btn-area">
+    <button formType="submit" type='primary'>保存</button>
+  </view>
+</form>

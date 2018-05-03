@@ -1,0 +1,17 @@
+<form bindsubmit="formSubmit">
+  <view class="view-registration">
+    <text class='text'>用户名：</text>
+    <input class='input-username' name='name' type='text' confirm-type='done' placeholder="请输入用户名"></input>
+  </view>
+  <view class="view-registration">
+    <text class='text'>手机号码：</text>
+    <input class='input-phone-num' name='phone' type='number' maxlength='11' confirm-type='next' placeholder="请输入手机号码"></input>
+  </view>
+  <view class="view-registration">
+    <text class='text'>密码：</text>
+    <input class='input-password' name='password' type='number' password='true' confirm-type='next' placeholder="请输入密码"></input>
+  </view>
+  <view class="btn-area">
+    <button formType="submit" type='primary'>注册</button>
+  </view>
+</form>

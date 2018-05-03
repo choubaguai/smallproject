@@ -1,0 +1,14 @@
+<view class="estate-list">
+  <scroll-view scroll-y="true" bindscrolltolower="estateList">
+    <view class="result-item" wx:for="{{estateList}}" wx:key="unique" data-data="{{item}}" bindtap='tenants'>
+      <!-- <image class="image" mode="aspectFill" src="https://rental.xinlongcn.com/images/ic_attach_money_48px.svg"></image> -->
+      <view class='result-title'>
+        <text class="title">{{item.tenement_code}}室</text>
+        <text class="subtitle">户型：{{item.house_type}}。月租：{{item.monthly_rent}}元</text>
+      </view>
+       <view class='houses-state'>
+        <text class='zuke'>{{item.is_or_not_rent==1?"已租":"空闲"}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

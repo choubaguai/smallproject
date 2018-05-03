@@ -1,0 +1,30 @@
+<swiper class="home-swiper" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="flex-wrp">
+    <view class="flex-item_1" bindtap="idle">
+      <image class="image1" mode="aspectFill" src="https://rental.xinlongcn.com/images/ic_apps_48px.svg"></image>
+      <text>闲置房屋</text>
+    </view>
+    <view class="flex-item_2" bindtap="rent">
+      <image class="image1" mode="aspectFill" src="https://rental.xinlongcn.com/images/ic_attach_money_white_48px.svg"></image>
+      <text>待缴房租</text>
+    </view>
+</view>
+<view class="flex-wrp">
+    <view class="flex-item_3" bindtap="bill">
+      <image class="image1" mode="aspectFill" src="https://rental.xinlongcn.com/images/ic_payment_white_48px.svg"></image>
+      <text>水表电表</text>
+    </view>
+    <view class="flex-item_4" bindtap="maturity">
+      <image class="image1" mode="aspectFill" src="https://rental.xinlongcn.com/images/ic_alarm_add_48px.svg"></image>
+      <text>到期/续租</text>
+    </view>
+</view>
+
+

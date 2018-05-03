@@ -1,0 +1,110 @@
+.page{
+  background-color: #eee;
+}
+.view-house-code {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20rpx 20rpx 20rpx 40rpx;
+  overflow: hidden;
+  border-top: 2rpx solid #e5e5e5;
+}
+
+.view-house-center {
+  position: relative;
+  display: flex;
+  margin-left: 20rpx;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  overflow: hidden;
+  border-top: 2rpx solid #e5e5e5;
+}
+
+.view-house-asset {
+  position: relative;
+  display: flex;
+  margin-left: 20rpx;
+  flex-direction: row;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  overflow: hidden;
+  border-top: 2rpx solid #e5e5e5;
+  justify-content: space-between;
+}
+
+.text-title {
+  color: white;
+}
+.text-color{
+  color: #808080;
+}
+
+.text-details {
+  margin-left: 20rpx;
+  color: white;
+}
+
+.addtenants {
+  display: block;
+  margin: 20rpx;
+}
+
+.addtenants_hide {
+  display: none;
+}
+.view-tenant-info{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  overflow: hidden;
+  border-top: 2rpx solid #e5e5e5;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+.result-item {
+  display: block;
+}
+.result-item-hide{
+  display: none;
+}
+.zuke {
+  color: #808080;
+  height: 100%;
+  align-self: center
+}
+
+.result-item .title, .result-item .subtitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 40rpx;
+}
+
+.result-item .title {
+  margin-bottom: 4rpx;
+  color: #000;
+}
+
+.result-title {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-item .subtitle {
+  color: #808080;
+  font-size: 24rpx;
+}
+
+.result-item:first-child .subtitle text {
+  margin-right: 20rpx;
+}
+
+.result-item:not(:first-child) .subtitle text:not(:first-child):before {
+  content: '/';
+  margin: 0 8rpx;
+}
+
+

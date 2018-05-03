@@ -1,0 +1,9 @@
+/* pages/homeassets/hoemassets.wxss */
+.checkbox{
+  display: flex;
+  margin: 15rpx;
+}
+.btn-area{
+  margin-top: 20rpx;
+  margin: 15rpx
+}

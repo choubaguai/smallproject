@@ -1,0 +1,15 @@
+<view class="container" style="background-image: url('https://rental.xinlongcn.com/images/login_bg.jpg'); background-size: cover">
+  <form bindsubmit='formSubmit'>
+    <view class="usermotto">
+      <input maxlength="11" type="number" name="phone" class="user-motto" placeholder="请输入手机号码" />
+      <view class='line-css'></view>
+      <input maxlength="20" type="text" name="password" class="input-login" placeholder="请输入密码" password='true'/>
+    </view>
+    <view class="btn-area">
+      <button formType="submit" type='primary'>登录</button>
+    </view>
+    <view class="view-register">
+      <button bindtap='register'>注册</button>
+    </view>
+  </form>
+</view>
